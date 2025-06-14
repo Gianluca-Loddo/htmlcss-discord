@@ -2,16 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord - Flex - CSS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struttura Discord - HTML - CSS</title>
+    <!-- Collegamento foglio stile css -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<!-- Assegnazione della classe DEBUG a body -->
+<!-- La classe debug serve per attivare uno stile di sviluppo (vedi: colori di sfondo, bordi, ecc. nel file CSS) -->
 
+<body class="debug">
+
+    <!-- Header -->
     <header>
-
+        <div class="box-h"> <!-- Box per il contenuto dell'header, serve per organizzare lo spazio -->
+            <nav> <!-- Box per la navigazione che conterrà il logo, i link e il pulsante di login -->
+                  <!-- La classe nav serve per stilizzare il box della navigazione: È un tag semantico HTML5 -->
+                <div class="logo">logo</div>
+                <div class="ham">link link link link link</div>
+                <button type="button" class="login">login</button>
+                <!-- Un bottone per il login. Ha la classe login per essere stilizzato dal CSS. -->
+            </nav>
+            <div class="hero"> <!-- Box per l'immagine di sfondo dell'header -->
+                <div class="box1"></div> <!-- Box per l'inserimento dei contenuti: scritte, bottoni etc. -->
+            </div>
+        </div>
     </header>
 
     <body>
