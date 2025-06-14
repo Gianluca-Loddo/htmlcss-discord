@@ -1,6 +1,80 @@
-/* Reset della pagina di stile */
+/* RESET BASE */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* FONT STACK: usa il primo disponibile tra questi font */
+}
+
+/*__________________________________________________*/
+/* CLASSI DEBUG - SVILUPPO (assegnazioni css: colori, bordi) */
+
+/*HEADER*/
+.debug header {
+    background-color: #aed8e5;
+    height: 610px;
+}
+
+.debug .hero {
+    background-color: #04008b;
+    height: 520px;
+}
+
+.debug .box-hero {
+    background-color: #ee82ed;
+    height: 415px;
+    width: 945px;
+    border: 2px dashed black;
+}
+
+/*MAIN SEZIONI ALTERNATE*/
+
+.debug .grande {
+    background-color: #1f90ff;
+    border: 2px dashed black;
+}
+
+.debug .piccola {
+    background-color: #ffc0ca;
+    border: 2px dashed black;
+}
+
+/*__________________________________________________*/
+
+/*IN QUESTO PUNTO INVERTIAMO LA POSIZIONE DELLE COLONNE (PICCOLA > GRANDE)
+DELLA SECONDA SEZIONE ALTERNATA E ASSEGNAMO LO SFONDO GRIGIO*/
+
+/* Assegniamo lo sfondo grigio alla sezione con classe sezione-invertita */
+.debug .sezione-invertita {
+    background-color: #d3d3d3;
+}
+
+/* All'interno di sezione-invertita, spostiamo .piccola prima di .grande nel layout flex */
+.debug .sezione-invertita .piccola {
+    order: -1;
+}
+
+/*NOTA: È stata aggiunta manualmente la classe .sezione-invertita all'HTML della seconda sezione.
+Questo metodo è più sicuro e robusto rispetto all’uso di :nth-of-type, o :nth-child perché non dipende dalla
+struttura del DOM (numero o tipo di tag), ed è più leggibile e mantenibile. */
+
+/*__________________________________________________*/
+
+
+/*IN QUESTO PUNTO ASSEGNIAMO SFONDO BIANCO ALLA PRIMA E ULTIMA SEZIONE*/
+
+/* Assegniamo sfondo bianco alla prima e ultima sezione alternata tramite classi esplicite */
+.debug .prima .box-sezione-alternata,
+.debug .ultima .box-sezione-alternata {
+    background-color: white;
+}
+
+/*NOTA: non è stato usato :first-child e :last-child perché non affidabile
+in presenza di altri figli nel DOM. Le classi .prima e .ultima sono più sicure, 
+leggibili e robuste per assegnare uno stile specifico. */
+
+/*__________________________________________________*/
