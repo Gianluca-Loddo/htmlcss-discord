@@ -143,10 +143,10 @@ Bordo nero tratteggiato. */
 }
 
 nav {
-    display: flex;
+    display: flex; /* Usa flexbox per allineare gli elementi: altrimenti logo, ham, button andrebbero a capo */
     max-width: 1250px;
     justify-content: center;
-    margin: 0 auto 20px; /* Centra il nav (destra e sinistra) spaziandolo 20 px dal blocco successivo hero*/
+    margin: 0 auto 20px; /* Centra il nav (destra e sinistra) spaziandolo 20 px dal blocco successivo hero */
 }
 
 .logo,
@@ -202,3 +202,77 @@ button[type="button"] {
 
 
 /*__________________________________________________*/
+
+/* MAIN */
+.sezione-alternata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0; /* Spaziatura verticale tra le sezioni */
+}
+
+.box-sezione-alternata {
+    display: flex;
+    width: 1250px;
+    align-items: flex-start;
+}
+
+.grande {
+    height: 520px;
+    flex-grow: 1;
+}
+
+.piccola {
+    height: 520px;
+    width: 500px;
+}
+
+.box-blocco-finale {
+    display: flex;
+    padding: 45px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-contenuto-finale {
+    width: 1245px;
+}
+/*__________________________________________________*/
+
+/* FOOTER */
+.BOX-COLONNE {
+    display: flex;
+    width: 1250px;
+    padding: 10px 0 40px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.BOX-COLONNE:first-child {
+    flex-grow: 1;
+}
+
+.BOX-COLONNE .Colonne-verticali-footer:nth-child(2),
+.BOX-COLONNE .Colonne-verticali-footer:nth-child(3),
+.BOX-COLONNE .Colonne-verticali-footer:nth-child(4),
+.BOX-COLONNE .Colonne-verticali-footer:nth-child(5) {
+    width: 215px;
+}
+
+.footer {
+    width: 1250px;
+    margin: 30px auto 0;
+    padding: 20px 0;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer .footer-logo,
+.footer .footer-bottone {
+    padding: 10px 15px;
+}
