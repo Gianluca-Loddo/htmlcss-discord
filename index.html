@@ -16,7 +16,7 @@
 
     <!-- Header -->
     <header>
-        <div class="box-h"> <!-- Box per il contenuto dell'header, serve per organizzare lo spazio -->
+        <div class="box-header"> <!-- Box per il contenuto dell'header, serve per organizzare lo spazio -->
             <nav> <!-- Box per la navigazione che conterrà il logo, i link e il pulsante di login -->
                 <!-- La classe nav serve per stilizzare il box della navigazione: È un tag semantico HTML5 -->
                 <div class="logo">logo</div>
@@ -25,83 +25,85 @@
                 <!-- Un bottone per il login. Ha la classe login per essere stilizzato dal CSS. -->
             </nav>
             <div class="hero"> <!-- Box per l'immagine di sfondo dell'header -->
-                <div class="box1"></div> <!-- Box per l'inserimento dei contenuti: scritte, bottoni etc. -->
+                <div class="box-hero"></div> <!-- Box per l'inserimento dei contenuti: scritte, bottoni etc. -->
             </div>
         </div>
     </header>
 
-    <body>
-        <main>
-            <!-- MAIN -->
 
-            <!-- SEZIONI ALTERNATE 1 - 2 - 3 
+
+    <main>
+        <!-- MAIN -->
+
+        <!-- SEZIONI ALTERNATE 1 - 2 - 3 
          Ogni section-box contiene un contenitore (box2) con due blocchi:
-         big-main: il contenuto principale (grande).
-         small-main: il contenuto secondario (piccolo).
+         grande: il contenuto principale (grande).
+         piccola: il contenuto secondario (piccolo).
          La 2ª sezione è leggermente diversa nel CSS (ha sfondo grigio e ordine invertito). -->
 
-            <!-- Sezione Alternata 1 -->
-            <div class="section-box">
-                <div class="box2">
-                    <div class="big-main"></div>
-                    <div class="small-main"></div>
-                </div>
+        <!-- Sezione Alternata 1 -->
+        <div class="sezione-alternata">
+            <div class="box-sezione-alternata"> <!-- Box per la sezione alternata, serve per organizzare lo spazio -->
+                <div class="grande"></div>
+                <div class="piccola"></div>
             </div>
-            <!----------------------------------------->
+        </div>
+        <!----------------------------------------->
 
-            <!-- Sezione Alternata 2 -->
-            <div class="section-box">
-                <div class="box2">
-                    <div class="big-main"></div>
-                    <div class="small-main"></div>
-                </div>
+        <!-- Sezione Alternata 2 -->
+        <div class="sezione-alternata">
+            <div class="box-sezione-alternata"> <!-- Box per la sezione alternata, serve per organizzare lo spazio -->
+                <div class="grande"></div>
+                <div class="piccola"></div>
             </div>
-            <!----------------------------------------->
+        </div>
+        <!----------------------------------------->
 
-            <!-- Sezione Alternata 3 -->
-            <div class="section-box">
-                <div class="box2">
-                    <div class="big-main"></div>
-                    <div class="small-main"></div>
-                </div>
+        <!-- Sezione Alternata 3 -->
+        <div class="sezione-alternata">
+            <div class="box-sezione-alternata"> <!-- Box per la sezione alternata, serve per organizzare lo spazio -->
+                <div class="grande"></div>
+                <div class="piccola"></div>
             </div>
-            <!----------------------------------------->
+        </div>
+        <!----------------------------------------->
 
 
-            <!-- BLOCCO FINALE -->
-            <div class="box3">
-                <div class="closed-box"></div>
-            </div>
-            <!----------------------------------------->
-        </main>
-    </body>
-         
+        <!-- BLOCCO FINALE -->
+        <div class="box-blocco-finale"> <!-- Box per il contenuto finale, serve per organizzare lo spazio -->
+            <div class="box-contenuto-finale"></div>
+        </div>
+        <!----------------------------------------->
+
+       
+    </main>
+
     <footer>
-        <div class="box-f"> <!-- Box per il contenuto del footer, serve per organizzare lo spazio -->
+        <div class="box-footer"> <!-- Box per il contenuto del footer, serve per organizzare lo spazio -->
             
             <!-- Sezione COLONNE -->
-            <div class="box4"><!-- Box per le colonne del footer -->
-                <div class="small-box-footer"></div>
-                <div class="small-box-footer"></div>
-                <div class="small-box-footer"></div>
-                <div class="small-box-footer"></div>
+            <div class="BOX-COLONNE"><!-- Box per le colonne del footer -->
+                <div class="Colonne-verticali-footer"></div>
+                <div class="Colonne-verticali-footer"></div>
+                <div class="Colonne-verticali-footer"></div>
+                <div class="Colonne-verticali-footer"></div>
             </div>
             <!----------------------------------------->
 
             <hr/><!-- Linea orizzontale per separare le sezioni del footer -->
 
             <!-- Sezione PIE' DI PAGINA -->
-            <div class="foot"><!-- Box per il contenuto del piè di pagina -->
-                <div class="foot-flex"><!-- Box per organizzare il contenuto del piè di pagina in modo flessibile -->
-                    <div class="foot-logo">Logo</div>
-                    <div class="foot-bottone">Bottone</div>
+            <div class="footer"><!-- Box per il contenuto del piè di pagina -->
+                <div class="footer-flex"><!-- Box per organizzare il contenuto del piè di pagina in modo flessibile -->
+                    <div class="footer-logo">Logo</div>
+                    <div class="footer-bottone">Bottone</div>
                 </div>
             </div>
             <!----------------------------------------->
 
         </div>
     </footer>
-
+  
 </body>
 
 </html>
