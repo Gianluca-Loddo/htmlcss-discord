@@ -16,9 +16,6 @@ body {
     color: #ffffff; /* Colore di testo di base (bianco) */
     font-size: 16px; /* Dimensione di base leggibile */
     line-height: 1.6; /* Spaziatura verticale gradevole */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 
