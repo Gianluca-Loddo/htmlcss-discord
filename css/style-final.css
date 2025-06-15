@@ -1,18 +1,47 @@
+* {
+    margin: 0; /* rimuove margini predefiniti */
+    padding: 0; /* rimuove padding predefiniti */
+    box-sizing: border-box; /* include padding e bordo nelle dimensioni degli elementi */
+}
+
+
 /* ========================= */
-/* HEADER - NAVIGATION BAR  */
+/* FONT PRINCIPALE DEL SITO */
 /* ========================= */
 
-header {
-    background-color: #404eed; /* colore blu tipico Discord */
-    padding: 20px 0;
+/* Applica il font "Noto Sans" al corpo del documento */
+/* e imposta un colore di testo predefinito */
+body {
+    font-family: 'Noto Sans', sans-serif; /* Font principale con fallback */
+    color: #ffffff; /* Colore di testo di base (bianco) */
+    font-size: 16px; /* Dimensione di base leggibile */
+    line-height: 1.6; /* Spaziatura verticale gradevole */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+/* ========================= */
+/* HEADER - NAVIGATION BAR + IMMAGINE HERO */
+/* ========================= */
+
+/* ❗️Nota: il colore di sfondo blu va applicato su `.box-header`, non su `header`.  
+È importante inserire anche `padding-top: 20px` per evitare che l’immagine venga tagliata in alto. */
+
+.box-header {
+    background-color: #255ee9; /* colore blu Discord */
+    padding-bottom: 0; /* rimosso spazio inutile */
+    padding-top: 20px; /* spazio sopra l'header */
+}
+
 
 nav {
     display: flex; /* disposizione orizzontale */
     justify-content: space-between; /* distribuisce gli elementi */
     align-items: center; /* allinea verticalmente */
     max-width: 1200px; /* larghezza massima del contenuto */
-    margin: 0 auto; /* centra tutto orizzontalmente */
+    margin: 0 auto; /* centra tutto orizzontalmente*/
     padding: 0 20px; /* margine interno ai lati */
 }
 
@@ -53,9 +82,78 @@ nav {
     font-size: 14px;
     cursor: pointer;
     border: none;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s; /* transizione al passaggio del mouse */
 }
 
 .login:hover {
     background-color: #e6e6e6;
+}
+
+
+/* ========================= */
+/* HERO SECTION              */
+/* ========================= */
+
+/* Contenitore principale della sezione hero (subito sotto l’header) */
+.hero {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Box interno che limita la larghezza massima del contenuto */
+.box-hero {
+    max-width: 900px; /* larghezza massima del contenuto, oltre non cresce */
+    margin: 0 auto; /* centra orizzontalmente il box */
+    padding: 0 20px; /* margine interno laterale per non far toccare il bordo */
+}
+
+/* Titolo grande: “Il tuo posto per parlare” */
+.hero h1 {
+    font-size: 48px; /* dimensione grande del testo */
+    font-weight: 800; /* testo molto marcato (grassetto estremo) */
+    margin-bottom: 30px; /* spazio sotto il titolo prima del paragrafo */
+}
+
+/* Paragrafo descrittivo (sotto il titolo) */
+.hero p {
+    font-size: 18px; /* dimensione leggibile ma più piccola del titolo */
+    line-height: 1.6; /* altezza interlinea per migliorare la leggibilità */
+    margin-bottom: 40px; /* spazio sotto il paragrafo prima dei bottoni */
+}
+
+/* Contenitore dei due bottoni (scarica e browser) */
+.hero-buttons {
+    display: flex; /* i bottoni vanno affiancati orizzontalmente */
+    justify-content: center; /* centra orizzontalmente i bottoni */
+    gap: 20px; /* distanza tra un bottone e l’altro */
+    flex-wrap: wrap; /* se manca spazio, i bottoni vanno a capo senza uscire dai limiti */
+}
+
+/* Stile base per tutti i bottoni della hero */
+.hero-buttons button {
+    font-size: 16px; /* dimensione del testo dei bottoni */
+    padding: 14px 22px; /* spazio interno (alto-basso 14px, destra-sinistra 22px) */
+    border: none; /* nessun bordo visibile */
+    border-radius: 25px; /* angoli arrotondati, effetto “pillola” */
+    cursor: pointer; /* cambia il cursore in manina quando ci passi sopra */
+    font-weight: bold; /* testo in grassetto */
+}
+
+/* Bottone “Scarica per Mac” - fondo bianco, testo nero */
+.hero-buttons .mac {
+    background-color: white; /* sfondo del bottone */
+    color: black; /* colore del testo */
+}
+
+/* Bottone “Apri Discord nel tuo browser” - fondo scuro, testo bianco */
+.hero-buttons .browser {
+    background-color: #23272a; /* grigio molto scuro, stile Discord */
+    color: white; /* testo bianco */
 }
