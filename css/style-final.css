@@ -1,0 +1,61 @@
+/* ========================= */
+/* HEADER - NAVIGATION BAR  */
+/* ========================= */
+
+header {
+    background-color: #404eed; /* colore blu tipico Discord */
+    padding: 20px 0;
+}
+
+nav {
+    display: flex; /* disposizione orizzontale */
+    justify-content: space-between; /* distribuisce gli elementi */
+    align-items: center; /* allinea verticalmente */
+    max-width: 1200px; /* larghezza massima del contenuto */
+    margin: 0 auto; /* centra tutto orizzontalmente */
+    padding: 0 20px; /* margine interno ai lati */
+}
+
+/* ========================= */
+/* LOGO A SINISTRA */
+/* ========================= */
+
+.logo img {
+    height: 35px; /* altezza fissa per il logo */
+}
+
+/* ========================= */
+/* LINK CENTRALI (testi cliccabili) */
+/* ========================= */
+
+.links {
+    display: flex;
+    gap: 30px; /* distanza tra le voci */
+    font-size: 14px;
+}
+
+.links div {
+    color: white;
+    cursor: pointer; /* manina al passaggio */
+    font-weight: 500;
+}
+
+/* ========================= */
+/* BOTTONE ACCEDI */
+/* ========================= */
+
+.login {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.login:hover {
+    background-color: #e6e6e6;
+}
