@@ -20,7 +20,7 @@ body {
 
 
 /* ========================= */
-/* HEADER - NAVIGATION BAR + IMMAGINE HERO */
+/*  HEADER - NAVIGATION BAR  */
 /* ========================= */
 
 /* ❗️Nota: il colore di sfondo blu va applicato su `.box-header`, non su `header`.  
@@ -28,8 +28,8 @@ body {
 
 .box-header {
     background-color: #255ee9; /* colore blu Discord */
-    padding-bottom: 0; /* rimosso spazio inutile */
     padding-top: 20px; /* spazio sopra l'header */
+    padding-bottom: 0px; /* rimozione spazio sotto l'immagine hero: evita ci sia del colore */
 }
 
 
@@ -62,9 +62,9 @@ nav {
 
 .links a {
     color: white;
+    font-weight: 500;
     text-decoration: none; /* rimuove la sottolineatura */
     cursor: pointer; /* manina al passaggio */
-    font-weight: 500;
     transition: color 0.2s; /* transizione al passaggio del mouse: cambia il colore (definito in :hover) e il tempo di transizione */
 }
 
@@ -100,10 +100,10 @@ nav {
 /* Contenitore principale della sezione hero (subito sotto l’header) */
 .hero {
     background-image: url("../img/jumbo.png");
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* copre tutta l'area senza distorsioni */
+    background-position: center; /* centra l'immagine di sfondo: altrimenti con uno zoom il testo non rimarrebbe centrale */
     background-repeat: no-repeat;
-    padding: 100px 0;
+    padding: 150px 0; /* spazio sopra e sotto il contenuto: altrimenti l'immagine sfondo sarebbe troppo piccola */
     text-align: center;
     color: white;
 }
