@@ -303,5 +303,70 @@ Così, il primo elemento risulta più largo in proporzione.
   display: block;
 }
 
+/* ========================= */
+/*       BLOCCO FINALE       */
+/* ========================= */
 
+/* box-blocco-finale è il contenitore esterno. Serve a definire lo sfondo grigio e centrare il contenuto.*/
+.box-blocco-finale {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 100px 30px;
+}
+
+/* box-contenuto-finale è il contenitore interno, con una larghezza massima (1100px) 
+per non far allargare troppo il contenuto su schermi grandi. */
+.box-contenuto-finale {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: black;
+}
+
+.box-contenuto-finale h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.box-contenuto-finale p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* L'immagine principale ha una classe illustrazione-finale per gestire dimensione responsive, margine inferiore, e centratura. */
+.box-contenuto-finale img.illustrazione-finale {
+  max-width: 100%; /* larghezza massima 100%: si adatta al contenitore */
+  height: auto; /* altezza automatica per mantenere le proporzioni */
+  display: block; /* rende l'immagine un blocco, occupa tutta la larghezza disponibile */
+  margin: 0 auto 60px; /* margine superiore 0, inferiore 60px per spazio sotto l'immagine */
+}
+
+/* L'immagine delle stelle ha una classe stars per gestire dimensione, margine e centratura. 
+viene usata come separatore tra l'illustrazione e il testo finale*/
+.box-contenuto-finale img.stars {
+  margin: 0 auto 20px;
+  height: 32px;
+  display: block;
+}
+
+.box-contenuto-finale h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.box-contenuto-finale .mac {
+  background-color: #5865f2;
+  color: white;
+  font-size: 16px;
+  padding: 14px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.box-contenuto-finale .mac:hover {
+  background-color: #4752c4;
+}
 
