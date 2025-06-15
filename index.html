@@ -13,11 +13,7 @@
     <link rel="stylesheet" href="css/style-final.css" />
 </head>
 
-<!-- Assegnazione della classe DEBUG a body -->
-<!-- La classe debug serve per attivare uno stile di sviluppo (vedi: colori di sfondo, bordi, ecc. nel file CSS) -->
-
 <body>
-
     <!-- Header -->
     <header>
 
@@ -61,11 +57,7 @@
 
     <main>
 
-        <!-- SEZIONI ALTERNATE 1 - 2 - 3 
-         Ogni section-box contiene un contenitore (box2) con due blocchi:
-         grande: il contenuto principale (grande).
-         piccola: il contenuto secondario (piccolo).
-         La 2ª sezione è leggermente diversa nel CSS (ha sfondo grigio e ordine invertito). -->
+        <!-- SEZIONI ALTERNATE 1 - 2 - 3 -->
 
         <!-- Sezione 1 - Bianca -->
         <section class="sezione-alternata sezione-bianca">
@@ -83,15 +75,16 @@
             </div>
         </section>
 
-
-        <!-- Onda grigia su bianca -->
+        <!-- Onda GRIGIA su fondo BIANCO (inizio sezione grigia) -->
         <div class="onda">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,0 C360,30 1080,50 1440,0 L1440,80 L0,80 Z" fill="#f6f6f6"></path>
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 
+                 C180,50 360,-50 540,0 
+                 C720,50 900,-50 1080,0 
+                 C1260,50 1440,-50 1620,0 
+                 L1620,100 L0,100 Z" fill="#f6f6f6"></path>
             </svg>
         </div>
-
-
 
         <!-- Sezione 2 - Grigia (invertita) -->
         <section class="sezione-alternata sezione-grigia sezione-invertita">
@@ -109,14 +102,16 @@
             </div>
         </section>
 
-
-        <!-- Onda bianca su grigio -->
+        <!-- Onda BIANCA su fondo GRIGIO (inizio sezione bianca) -->
         <div class="onda">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,30 C360,80 1080,0 1440,30 L1440,0 L0,0 Z" fill="white"></path>
+            <svg viewBox="0 0 1620 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,100 
+                 C180,50 360,150 540,100 
+                 C720,50 900,150 1080,100 
+                 C1260,50 1440,150 1620,100 
+                 L1620,0 L0,0 Z" fill="#f6f6f6"></path>
             </svg>
         </div>
-
 
         <!-- Sezione 3 - Bianca -->
         <section class="sezione-alternata sezione-bianca">
