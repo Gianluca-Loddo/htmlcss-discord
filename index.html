@@ -16,7 +16,7 @@
 <!-- Assegnazione della classe DEBUG a body -->
 <!-- La classe debug serve per attivare uno stile di sviluppo (vedi: colori di sfondo, bordi, ecc. nel file CSS) -->
 
-<body class="debug">
+<body>
 
     <!-- Header -->
     <header>
@@ -27,7 +27,7 @@
                 <div class="logo">
                     <img src="img/logo.svg" alt="Logo Discord" />
                 </div>
-                
+
                 <div class="links">
                     <a href="#">Scarica</a>
                     <a href="#">Perché Discord</a>
@@ -59,8 +59,6 @@
         </div>
     </header>
 
-
-
     <main>
 
         <!-- SEZIONI ALTERNATE 1 - 2 - 3 
@@ -69,32 +67,74 @@
          piccola: il contenuto secondario (piccolo).
          La 2ª sezione è leggermente diversa nel CSS (ha sfondo grigio e ordine invertito). -->
 
-        <!-- Sezione Alternata 1 -->
-        <div class="sezione-alternata prima">
-            <div class="box-sezione-alternata"> <!-- Box per la sezione alternata, serve per organizzare lo spazio -->
-                <div class="grande"></div>
-                <div class="piccola"></div>
+        <!-- Sezione 1 - Bianca -->
+        <section class="sezione-alternata sezione-bianca">
+            <div class="box-sezione-alternata">
+                <div class="grande">
+                    <img src="img/item1.svg" alt="Immagine sezione 1" />
+                </div>
+                <div class="piccola">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>
+                        I server Discord sono organizzati in canali tematici in cui puoi collaborare,
+                        condividere o semplicemente parlare della giornata senza intasare una chat di gruppo.
+                    </p>
+                </div>
             </div>
-        </div>
-        <!----------------------------------------->
+        </section>
 
-        <!-- Sezione Alternata 2 -->
-        <div class="sezione-alternata sezione-invertita">
-            <div class="box-sezione-alternata"> <!-- Box per la sezione alternata, serve per organizzare lo spazio -->
-                <div class="grande"></div>
-                <div class="piccola"></div>
-            </div>
-        </div>
-        <!----------------------------------------->
 
-        <!-- Sezione Alternata 3 -->
-        <div class="sezione-alternata ultima">
-            <div class="box-sezione-alternata"> <!-- Box per la sezione alternata, serve per organizzare lo spazio -->
-                <div class="grande"></div>
-                <div class="piccola"></div>
-            </div>
+        <!-- Onda grigia su bianca -->
+        <div class="onda">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 C360,30 1080,50 1440,0 L1440,80 L0,80 Z" fill="#f6f6f6"></path>
+            </svg>
         </div>
-        <!----------------------------------------->
+
+
+
+        <!-- Sezione 2 - Grigia (invertita) -->
+        <section class="sezione-alternata sezione-grigia sezione-invertita">
+            <div class="box-sezione-alternata">
+                <div class="grande">
+                    <img src="img/item2.svg" alt="Immagine sezione 2" />
+                </div>
+                <div class="piccola">
+                    <h2>Dove trovarsi è facile</h2>
+                    <p>
+                        Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server
+                        possono vedere che sei lì e unirsi istantaneamente senza dover chiamare.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Onda bianca su grigio -->
+        <div class="onda">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C360,80 1080,0 1440,30 L1440,0 L0,0 Z" fill="white"></path>
+            </svg>
+        </div>
+
+
+        <!-- Sezione 3 - Bianca -->
+        <section class="sezione-alternata sezione-bianca">
+            <div class="box-sezione-alternata">
+                <div class="grande">
+                    <img src="img/item3.svg" alt="Immagine sezione 3" />
+                </div>
+                <div class="piccola">
+                    <h2>Da pochi a un fandom</h2>
+                    <p>
+                        Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione
+                        e accesso ai membri personalizzabile. Concedi ai membri poteri speciali,
+                        crea canali privati, e molto altro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
 
 
 

@@ -1,7 +1,10 @@
 * {
-    margin: 0; /* rimuove margini predefiniti */
-    padding: 0; /* rimuove padding predefiniti */
-    box-sizing: border-box; /* include padding e bordo nelle dimensioni degli elementi */
+    margin: 0;
+    /* rimuove margini predefiniti */
+    padding: 0;
+    /* rimuove padding predefiniti */
+    box-sizing: border-box;
+    /* include padding e bordo nelle dimensioni degli elementi */
 }
 
 
@@ -12,10 +15,14 @@
 /* Applica il font "Noto Sans" al corpo del documento */
 /* e imposta un colore di testo predefinito */
 body {
-    font-family: 'Noto Sans', sans-serif; /* Font principale con fallback */
-    color: #ffffff; /* Colore di testo di base (bianco) */
-    font-size: 16px; /* Dimensione di base leggibile */
-    line-height: 1.6; /* Spaziatura verticale gradevole */
+    font-family: 'Noto Sans', sans-serif;
+    /* Font principale con fallback */
+    color: #ffffff;
+    /* Colore di testo di base (bianco) */
+    font-size: 16px;
+    /* Dimensione di base leggibile */
+    line-height: 1.6;
+    /* Spaziatura verticale gradevole */
 }
 
 
@@ -27,19 +34,28 @@ body {
 È importante inserire anche `padding-top: 20px` per evitare che l’immagine venga tagliata in alto. */
 
 .box-header {
-    background-color: #255ee9; /* colore blu Discord */
-    padding-top: 20px; /* spazio sopra l'header */
-    padding-bottom: 0px; /* rimozione spazio sotto l'immagine hero: evita ci sia del colore */
+    background-color: #255ee9;
+    /* colore blu Discord */
+    padding-top: 20px;
+    /* spazio sopra l'header */
+    padding-bottom: 0px;
+    /* rimozione spazio sotto l'immagine hero: evita ci sia del colore */
 }
 
 
 nav {
-    display: flex; /* disposizione orizzontale */
-    justify-content: space-between; /* distribuisce gli elementi */
-    align-items: center; /* allinea verticalmente */
-    max-width: 1200px; /* larghezza massima del contenuto */
-    margin: 0 auto; /* centra tutto orizzontalmente*/
-    padding: 0 20px; /* margine interno ai lati */
+    display: flex;
+    /* disposizione orizzontale */
+    justify-content: space-between;
+    /* distribuisce gli elementi */
+    align-items: center;
+    /* allinea verticalmente */
+    max-width: 1200px;
+    /* larghezza massima del contenuto */
+    margin: 0 auto;
+    /* centra tutto orizzontalmente*/
+    padding: 0 20px;
+    /* margine interno ai lati */
 }
 
 /* ========================= */
@@ -47,7 +63,8 @@ nav {
 /* ========================= */
 
 .logo img {
-    height: 35px; /* altezza fissa per il logo */
+    height: 35px;
+    /* altezza fissa per il logo */
 }
 
 /* ========================= */
@@ -56,20 +73,25 @@ nav {
 
 .links {
     display: flex;
-    gap: 30px; /* distanza tra le voci */
+    gap: 30px;
+    /* distanza tra le voci */
     font-size: 14px;
 }
 
 .links a {
     color: white;
     font-weight: 500;
-    text-decoration: none; /* rimuove la sottolineatura */
-    cursor: pointer; /* manina al passaggio */
-    transition: color 0.2s; /* transizione al passaggio del mouse: cambia il colore (definito in :hover) e il tempo di transizione */
+    text-decoration: none;
+    /* rimuove la sottolineatura */
+    cursor: pointer;
+    /* manina al passaggio */
+    transition: color 0.2s;
+    /* transizione al passaggio del mouse: cambia il colore (definito in :hover) e il tempo di transizione */
 }
 
 .links a:hover {
-    color: #b9c9ff; /* leggero effetto hover */
+    color: #b9c9ff;
+    /* leggero effetto hover */
 }
 
 /* ========================= */
@@ -85,7 +107,8 @@ nav {
     font-size: 14px;
     cursor: pointer;
     border: none;
-    transition: background-color 0.2s; /* transizione al passaggio del mouse */
+    transition: background-color 0.2s;
+    /* transizione al passaggio del mouse */
 }
 
 .login:hover {
@@ -100,10 +123,13 @@ nav {
 /* Contenitore principale della sezione hero (subito sotto l’header) */
 .hero {
     background-image: url("../img/jumbo.png");
-    background-size: cover; /* copre tutta l'area senza distorsioni */
-    background-position: center; /* centra l'immagine di sfondo: altrimenti con uno zoom il testo non rimarrebbe centrale */
+    background-size: cover;
+    /* copre tutta l'area senza distorsioni */
+    background-position: center;
+    /* centra l'immagine di sfondo: altrimenti con uno zoom il testo non rimarrebbe centrale */
     background-repeat: no-repeat;
-    padding: 150px 0; /* spazio sopra e sotto il contenuto: altrimenti l'immagine sfondo sarebbe troppo piccola */
+    padding: 150px 0;
+    /* spazio sopra e sotto il contenuto: altrimenti l'immagine sfondo sarebbe troppo piccola */
     text-align: center;
     color: white;
 }
@@ -112,51 +138,155 @@ nav {
 
 /* Box interno che limita la larghezza massima del contenuto */
 .box-hero {
-    max-width: 900px; /* larghezza massima del contenuto, oltre non cresce */
-    margin: 0 auto; /* centra orizzontalmente il box */
-    padding: 0 20px; /* margine interno laterale per non far toccare il bordo */
+    max-width: 900px;
+    /* larghezza massima del contenuto, oltre non cresce */
+    margin: 0 auto;
+    /* centra orizzontalmente il box */
+    padding: 0 20px;
+    /* margine interno laterale per non far toccare il bordo */
 }
 
 /* Titolo grande: “Il tuo posto per parlare” */
 .hero h1 {
-    font-size: 48px; /* dimensione grande del testo */
-    font-weight: 800; /* testo molto marcato (grassetto estremo) */
-    margin-bottom: 30px; /* spazio sotto il titolo prima del paragrafo */
+    font-size: 48px;
+    /* dimensione grande del testo */
+    font-weight: 800;
+    /* testo molto marcato (grassetto estremo) */
+    margin-bottom: 30px;
+    /* spazio sotto il titolo prima del paragrafo */
 }
 
 /* Paragrafo descrittivo (sotto il titolo) */
 .hero p {
-    font-size: 18px; /* dimensione leggibile ma più piccola del titolo */
-    line-height: 1.6; /* altezza interlinea per migliorare la leggibilità */
-    margin-bottom: 40px; /* spazio sotto il paragrafo prima dei bottoni */
+    font-size: 18px;
+    /* dimensione leggibile ma più piccola del titolo */
+    line-height: 1.6;
+    /* altezza interlinea per migliorare la leggibilità */
+    margin-bottom: 40px;
+    /* spazio sotto il paragrafo prima dei bottoni */
 }
 
 /* Contenitore dei due bottoni (scarica e browser) */
 .hero-buttons {
-    display: flex; /* i bottoni vanno affiancati orizzontalmente */
-    justify-content: center; /* centra orizzontalmente i bottoni */
-    gap: 20px; /* distanza tra un bottone e l’altro */
-    flex-wrap: wrap; /* se manca spazio, i bottoni vanno a capo senza uscire dai limiti */
+    display: flex;
+    /* i bottoni vanno affiancati orizzontalmente */
+    justify-content: center;
+    /* centra orizzontalmente i bottoni */
+    gap: 20px;
+    /* distanza tra un bottone e l’altro */
+    flex-wrap: wrap;
+    /* se manca spazio, i bottoni vanno a capo senza uscire dai limiti */
 }
 
 /* Stile base per tutti i bottoni della hero */
 .hero-buttons button {
-    font-size: 16px; /* dimensione del testo dei bottoni */
-    padding: 14px 22px; /* spazio interno (alto-basso 14px, destra-sinistra 22px) */
-    border: none; /* nessun bordo visibile */
-    border-radius: 25px; /* angoli arrotondati, effetto “pillola” */
-    cursor: pointer; /* cambia il cursore in manina quando ci passi sopra */
-    font-weight: bold; /* testo in grassetto */
+    font-size: 16px;
+    /* dimensione del testo dei bottoni */
+    padding: 14px 22px;
+    /* spazio interno (alto-basso 14px, destra-sinistra 22px) */
+    border: none;
+    /* nessun bordo visibile */
+    border-radius: 25px;
+    /* angoli arrotondati, effetto “pillola” */
+    cursor: pointer;
+    /* cambia il cursore in manina quando ci passi sopra */
+    font-weight: bold;
+    /* testo in grassetto */
 }
 
 /* Bottone “Scarica per Mac” - fondo bianco, testo nero */
 .hero-buttons .mac {
-    background-color: white; /* sfondo del bottone */
-    color: black; /* colore del testo */
+    background-color: white;
+    /* sfondo del bottone */
+    color: black;
+    /* colore del testo */
 }
 
 /* Bottone “Apri Discord nel tuo browser” - fondo scuro, testo bianco */
 .hero-buttons .browser {
-    background-color: #23272a; /* grigio molto scuro, stile Discord */
-    color: white; /* testo bianco */
+    background-color: #23272a;
+    /* grigio molto scuro, stile Discord */
+    color: white;
+    /* testo bianco */
 }
+
+
+/* ========================= */
+/*    SEZIONE ALTERNATA      */
+/* ========================= */
+
+
+.box-sezione-alternata {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    gap: 60px;
+}
+
+/* Larghezza proporzionale */
+.box-sezione-alternata .grande {
+    flex: 1.3;
+}
+
+.box-sezione-alternata .piccola {
+    flex: 1;
+}
+
+/* Testo */
+.box-sezione-alternata h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.box-sezione-alternata p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+
+/* SFONDI ALTERNATI */
+.sezione-bianca {
+    background-color: white;
+}
+
+.sezione-grigia {
+    background-color: #f6f6f6;
+}
+
+/* IMMAGINE RESPONSIVE */
+.box-sezione-alternata img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SEZIONE INVERTITA */
+.sezione-invertita .grande {
+    order: 2;
+}
+
+.sezione-invertita .piccola {
+    order: 1;
+}
+
+/* SEZIONE ONDE */
+.onda {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.onda svg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
