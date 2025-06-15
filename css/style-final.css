@@ -63,10 +63,16 @@ nav {
     font-size: 14px;
 }
 
-.links div {
+.links a {
     color: white;
+    text-decoration: none; /* rimuove la sottolineatura */
     cursor: pointer; /* manina al passaggio */
     font-weight: 500;
+    transition: color 0.2s; /* transizione al passaggio del mouse: cambia il colore (definito in :hover) e il tempo di transizione */
+}
+
+.links a:hover {
+    color: #b9c9ff; /* leggero effetto hover */
 }
 
 /* ========================= */
