@@ -389,3 +389,116 @@ viene usata come separatore tra l'illustrazione e il testo */
 .box-contenuto-finale .mac:hover {
     background-color: #4752c4;
 }
+
+
+
+/* ========================= */
+/*        FOOTER STILE       */
+/* ========================= */
+
+footer {
+  background-color: #23272a;
+  color: white;
+  font-size: 14px;
+}
+
+.box-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Parte sinistra */
+.footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-footer {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-left h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.bandiera {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.social i {
+  margin-right: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Colonne */
+.footer-columns {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.colonna h5 {
+  font-size: 14px;
+  color: #5865f2;
+  margin-bottom: 16px;
+}
+
+.colonna ul {
+  list-style: none;
+}
+
+.colonna ul li {
+  margin-bottom: 10px;
+}
+
+.colonna ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.colonna ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Linea divisoria */
+footer hr {
+  border: none;
+  border-top: 1px solid #3c3f45;
+  margin: 40px 0 20px;
+}
+
+/* Parte inferiore finale */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .registrati {
+  background-color: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-bottom .registrati:hover {
+  background-color: #4752c4;
+}
