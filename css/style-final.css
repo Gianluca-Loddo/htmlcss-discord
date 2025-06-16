@@ -227,13 +227,19 @@ nav {
 
 
 .box-sezione-alternata {
-    display: flex; /* disposizione orizzontale: mette immagine e testo affiancati */
+    display: flex;
+    /* disposizione orizzontale: mette immagine e testo affiancati */
     align-items: center;
-    justify-content: space-between; /* distribuisce lo spazio tra immagine e testo: li spinge entrambi ai lati */
-    max-width: 1100px; /* larghezza massima del contenuto */
-    margin: 0 auto; /* centra orizzontalmente il contenuto: sopra e sotto non mette spazio */
-    padding: 100px 30px; /* margine interno: spazio sopra e sotto, 30px ai lati */
-    gap: 60px; /* spazio tra immagine e testo */
+    justify-content: space-between;
+    /* distribuisce lo spazio tra immagine e testo: li spinge entrambi ai lati */
+    max-width: 1100px;
+    /* larghezza massima del contenuto */
+    margin: 0 auto;
+    /* centra orizzontalmente il contenuto: sopra e sotto non mette spazio */
+    padding: 100px 30px;
+    /* margine interno: spazio sopra e sotto, 30px ai lati */
+    gap: 60px;
+    /* spazio tra immagine e testo */
 }
 
 
@@ -254,32 +260,39 @@ Così, il primo elemento risulta più largo in proporzione.
 /* Testo */
 .box-sezione-alternata h2 {
     font-size: 32px;
-    font-weight: 700; /* testo in grassetto */
+    font-weight: 700;
+    /* testo in grassetto */
     margin-bottom: 20px;
     color: black;
 }
 
 .box-sezione-alternata p {
-    font-size: 18px; 
-    line-height: 1.6; /* altezza interlinea per migliorare la leggibilità */
+    font-size: 18px;
+    line-height: 1.6;
+    /* altezza interlinea per migliorare la leggibilità */
     color: black;
 }
 
 /* IMMAGINE RESPONSIVE */
 .box-sezione-alternata img {
-    max-width: 100%; /* larghezza massima 100%: si adatta al contenitore */
-    height: auto; /* altezza automatica per mantenere le proporzioni */
-    display: block; /* rende l'immagine un blocco, occupa tutta la larghezza disponibile */
+    max-width: 100%;
+    /* larghezza massima 100%: si adatta al contenitore */
+    height: auto;
+    /* altezza automatica per mantenere le proporzioni */
+    display: block;
+    /* rende l'immagine un blocco, occupa tutta la larghezza disponibile */
 }
 
 
-/* SEZIONE INVERTITA: 2 SEZIONE */ 
+/* SEZIONE INVERTITA: 2 SEZIONE */
 .sezione-invertita .grande {
-    order: 2; /* mette l'immagine a destra */
+    order: 2;
+    /* mette l'immagine a destra */
 }
 
 .sezione-invertita .piccola {
-    order: 1; /* mette il testo a sinistra */
+    order: 1;
+    /* mette il testo a sinistra */
 }
 
 /* ========================= */
@@ -287,20 +300,20 @@ Così, il primo elemento risulta più largo in proporzione.
 /* ========================= */
 
 .onda {
-  position: relative;
-  width: 100%;
-  height: 100px; 
-  overflow: hidden;
-  line-height: 0;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    line-height: 0;
 }
 
 .onda svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 /* ========================= */
@@ -309,64 +322,70 @@ Così, il primo elemento risulta più largo in proporzione.
 
 /* box-blocco-finale è il contenitore esterno. Serve a definire lo sfondo grigio e centrare il contenuto.*/
 .box-blocco-finale {
-  background-color: #f6f6f6;
-  text-align: center;
-  padding: 100px 30px;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 100px 30px;
 }
 
 /* box-contenuto-finale è il contenitore interno, con una larghezza massima (1100px) 
 per non far allargare troppo il contenuto su schermi grandi. */
 .box-contenuto-finale {
-  max-width: 1100px;
-  margin: 0 auto;
-  color: black;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: black;
 }
 
 .box-contenuto-finale h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .box-contenuto-finale p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
 /* L'immagine principale ha una classe illustrazione-finale per gestire dimensione responsive, margine inferiore, e centratura. */
 .box-contenuto-finale img.illustrazione-finale {
-  max-width: 100%; /* larghezza massima 100%: si adatta al contenitore */
-  height: auto; /* altezza automatica per mantenere le proporzioni */
-  display: block; /* rende l'immagine un blocco, occupa tutta la larghezza disponibile */
-  margin: 0 auto 60px; /* margine superiore 0, inferiore 60px per spazio sotto l'immagine */
+    max-width: 100%;
+    /* larghezza massima 100%: si adatta al contenitore */
+    height: auto;
+    /* altezza automatica per mantenere le proporzioni */
+    display: block;
+    /* rende l'immagine un blocco, occupa tutta la larghezza disponibile */
+    margin: 0 auto;
+    /* margine superiore e inferiore 0, per centrare l'immagine l'auto equidistanzia */
 }
 
 /* L'immagine delle stelle ha una classe stars per gestire dimensione, margine e centratura. 
-viene usata come separatore tra l'illustrazione e il testo finale*/
+viene usata come separatore tra l'illustrazione e il testo */
 .box-contenuto-finale img.stars {
-  margin: 0 auto 20px;
-  height: 32px;
-  display: block;
+    margin: 0 auto;
+    /* margine superiore e inferiore 0, per centrare l'immagine l'auto equidistanzia */
+    height: 45px;
+    display: block;
+    /* rende l'immagine un blocco, occupa tutta la larghezza disponibile */
 }
 
 .box-contenuto-finale h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .box-contenuto-finale .mac {
-  background-color: #5865f2;
-  color: white;
-  font-size: 16px;
-  padding: 14px 22px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
+    background-color: #5865f2;
+    color: white;
+    font-size: 16px;
+    padding: 12px 28px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
 }
 
 .box-contenuto-finale .mac:hover {
-  background-color: #4752c4;
+    background-color: #4752c4;
 }
-
